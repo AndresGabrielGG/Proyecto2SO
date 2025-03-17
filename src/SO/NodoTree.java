@@ -14,13 +14,13 @@ public class NodoTree {
     private String nombre;
     private boolean esDirectorio;
     private int tamaño; // Solo aplicable si es un archivo
-    private Lista hijos; // Para directorios
+    private LinkedList<> hijos; // Para directorios
 
     public NodoTree(String nombre, boolean esDirectorio, int tamaño) {
         this.nombre = nombre;
         this.esDirectorio = esDirectorio;
         this.tamaño = tamaño;
-        this.hijos = Lista();
+        this.hijos = new LinkedList<>();
     }
 
     // Métodos getters y setters
